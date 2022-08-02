@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+    <%- include('partials/nav') %>
+
+    <main id="items" class="container">
+
+        <p id="heading"><span>ID</span>item</p>
+        
+        <% items.forEach(item =>{ %>
+
+            <p class="item"><span><%= item.id %></span><span><%= item.name %></span></p>
+
+        <% }) %>
+    </main>
+
+
+<%- include('partials/footer') %> 
